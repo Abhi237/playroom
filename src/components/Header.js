@@ -1,6 +1,4 @@
 import Link from "next/link";
-// import { openNav } from "./pages/navbar.js";
-// import { closeNav }from ".pages/navbar.js";
 import Head from "next/head.js";
 const Header = () => {
     return ( <
@@ -40,8 +38,7 @@ const Header = () => {
         a href = "#"
         class = "nav-link" > Landing < /a> <
         /div> <
-        button class = "openbtn"
-        onclick = "openNav()" > ☰ < /button>
+        button class = "openbtn" > ☰ < /button>
 
         <
         div className = "nav-links" >
@@ -74,14 +71,22 @@ const Header = () => {
         /li> <
         li >
         <
-        Link href = "/grid-view" > grid - view < /Link> <
+        Link href = "/grid-view" > Grid Home < /Link> <
+        /li> <
+        li >
+        <
+        Link href = "/animator" > Animator < /Link> <
+        /li> <
+        li >
+        <
+        Link href = "/rules--of--play" > Rules Of Play < /Link> <
         /li> <
         /ul> <
         /div> <
         /div> <
         /nav> <
         /header>
-    )
+    );
 };
 
 export default Header;
